@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alfandega do Brasil</title>
+</head>
+<body>
+    <h1>Identificador de Pais</h1>
+    Qual eh o seu pais?  <input type="text" name="txtpais" id="txtpais">
+    <input type="button" value="Lets Go Beach" onclick="calcular()">
+    <div id='res'> 
+
+    </div>
+
+    <script>
+        function calcular() {
+            var pais = window.document.querySelector('input#txtpais')
+            var res = window.document.getElementById('res')
+            res.innerText = `Seu pais eh ${pais.value}.`
+            if (pais.value == 'Brasil') {
+                res.innerHTML += `Vc eh um <strong>PUTO</strong> de um <italic>BRASILEIRO</italic>`
+            } else {
+                res.innerText += `Vc eh um estrangeiro gay`
+            }
+            res.innerHTML += `<p>Ta preso de qualqeur jeito playboy!</p>`
+        }
+    </script>
+
+</body>
+</html>
